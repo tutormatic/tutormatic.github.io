@@ -76,3 +76,17 @@ body {
 .Bottom {
     text-align: center;
 }
+
+.Plan {
+    height: 100%;
+    width: 100px;
+    border: solid gray 3px;
+}
+
+.Sep {
+    height: 3px;
+    width: 75%;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+}
