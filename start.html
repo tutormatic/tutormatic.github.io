@@ -12,8 +12,11 @@
         <input style="color: white;background: transparent;border: solid rgb(43, 43, 241) 3px;border-radius: 5px;height: 25px;" id="langName" type="text">
         <p style="color: white;">Full name</p>
         <input style="color: white;background: transparent;border: solid rgb(43, 43, 241) 3px;border-radius: 5px;height: 25px;" id="firstName" type="text">
-        <p style="color: white">Plan</p>
-        <input style="color: white;background: transparent;border: solid rgb(43, 43, 241) 3px;border-radius: 5px;height: 25px;" id="plan" type="text">
+        <p style="color: white;">Plan</p>
+        <input style="color: white;background: transparent;border: solid rgb(43, 43, 241) 3px;border-radius: 5px;height: 25px;" id="plan" type="text" list="planOptions">
+        <datalist id="planOptions">
+            <option value="Normal">
+        </datalist>
     </div>
     <div style="text-align: center;margin-top: 10px;">
         <button style="background-color: transparent;border: white solid 1px;width: 100px;height: 30px;color: white;margin-top: 10px;" onclick="sendEmail()">Finish email</button>
