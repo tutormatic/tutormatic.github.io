@@ -16,6 +16,7 @@
         <input style="color: white;background: transparent;border: solid rgb(43, 43, 241) 3px;border-radius: 5px;height: 25px;" id="plan" type="text" list="planOptions">
         <datalist id="planOptions">
             <option value="Normal">
+            <option value="Full web">
         </datalist>
     </div>
     <div style="text-align: center;margin-top: 10px;">
@@ -23,4 +24,13 @@
     </div>
 </body>
 <script src="./index.js"></script>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedPlan = urlParams.get('plan');
+    const planInput = document.getElementById('plan');
+    if (selectedPlan) {
+        planInput.value = selectedPlan;
+    }
+    console.log(urlParams)
+</script>
 </html>
