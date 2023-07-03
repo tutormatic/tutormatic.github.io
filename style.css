@@ -129,9 +129,11 @@ body {
 }
 
 .Plan {
-    height: 100%;
-    width: 100px;
+    height: 250px;
+    width: 250px;
     border: solid gray 3px;
+    border-radius: 10px;
+    box-shadow: black 0 0 6px 1px;
 }
 
 .Sep {
