@@ -48,7 +48,7 @@ body {
     transform: translate(-50%, -50%);
     width: 200px;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: white;
     border: 1px solid #ccc;
     z-index: 9999;
 }
@@ -183,5 +183,18 @@ body {
     }
     100% {
       transform: scale(1); /* Back to original size */
+    }
+}
+
+/* Media */
+
+@media (max-width: 767px) {
+    .LanguageContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .LanguageTable {
+        margin-bottom: 100px;
     }
 }
