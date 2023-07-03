@@ -14,7 +14,7 @@
         <a href="./start.html"><button class="MainButton" id="start">Start</button></a>
     </div>
     <div class="Middle">
-        <p style="font-size: 25px;">Here are the available languages you could learn.</p>
+        <p style="font-size: 40px;">List</p>
         <div class="LanguageContainer">
             <div class="LanguageTable">
                 <div class="format">
@@ -72,42 +72,45 @@
         </div>
         <div class="Sep"></div>
         <p style="font-size: 40px;">Plans</p>
-        <div style="display: flex; justify-content: center;">
-            <a href="start.html?plan=Normal" style="text-decoration: none;">
-                <div class="Plan">
-                    <p style="color: gray;">Normal</p>
-                    <p style="color: gray;">60 minutes</p>
-                    <p style="color: green;">$15 USD</p>
-                </div>
-            </a>
-            <a href="start.html?plan=Full web" style="text-decoration: none;">
-                <div class="Plan" style="margin-left: 10px;">
-                    <p style="color: gray;">Full web</p>
-                    <p style="color: gray;">HTML, CSS, Javascript</p>
-                    <p style="color: gray;">60 minutes</p>
-                    <p style="color: green;">$20 USD</p>
-                </div>
-            </a>
+        <div style="text-align: -webkit-center;">
+            <div class="Plan">
+                    <a href="start.html?plan=Normal" style="text-decoration: none;">
+                    <p style="color: black;font-size: 25px;font-weight: bold;">Normal</p>
+                    <p style="color: gray;text-decoration: line-through;margin-bottom: -15px;">$25 USD</p>
+                    <p style="color: green;font-weight: bold;font-size: 20px;">$15 USD</p>
+                    <p style="color: black;">You will learn 1 programming language of your choise that needs to be in the list.</p>
+                    <p style="color: black;">60 minutes</p>
+                </a>
+            </div>
+            <div class="Plan" style="margin-top: 25px;">
+                <a href="start.html?plan=Full web" style="text-decoration: none;">
+                    <p style="color: black;font-size: 25px;font-weight: bold;">Full web</p>
+                    <p style="color: gray;text-decoration: line-through;margin-bottom: -15px;">$30 USD</p>
+                    <p style="color: green;font-weight: bold;font-size: 20px;">$20 USD</p>
+                    <p style="color: black;">Learn the 3 basic languages that are used to create websites: HTML, CSS and Javascript.</p>
+                    <p style="color: black;">60 minutes</p>
+                </a>
+            </div>
         </div>
     </div>
     <div class="Sep" style="margin-top: 55px;"></div>
     <div style="text-align: center;">
         <p style="font-size: 40px;">Payments</p>
-        <p style="margin-bottom: -60px;">You should contact the company by email before paying. We are not responsible if you pay before.</p>
+        <p style="margin-bottom: -60px;">Contact the company before paying.</p>
         <button onclick="openPopup()" style="margin-bottom: 100px;" class="PaymentButton">Payments</button>
         <div class="popup" id="popup">
             <div class="popup-content">
-                <button onclick="closePopup()" class="exit-button">X</button>
-                <h2>Select a plan</h2>
-                <a href="https://buy.stripe.com/9AQ6qw9VOculbAYdQT"><button style="margin-bottom: 10px;" class="PlanButton" onclick="selectPlan('Normal')">Normal</button></a>
-                <a href="https://buy.stripe.com/7sI9CIfg8cul7kIcMQ"><button class="PlanButton" onclick="selectPlan('Web Full')">Web Full</button></a>
+              <button onclick="closePopup()" class="exit-button">X</button>
+              <h2>Select a plan</h2>
+              <a href="https://buy.stripe.com/9AQ6qw9VOculbAYdQT"><button style="margin-bottom: 10px;" class="PlanButton" onclick="selectPlan('Normal')">Normal</button></a>
+              <a href="https://buy.stripe.com/7sI9CIfg8cul7kIcMQ"><button class="PlanButton" onclick="selectPlan('Web Full')">Web Full</button></a>
             </div>
         </div>
     </div>
     <div class="Sep"></div>
     <div style="text-align: center;margin-bottom: 100px;">
         <p style="font-size: 40px;">Informations</p>
-        <p>All the tutorings will be done using <a href="https://zoom.us/download">Zoom</a>. We can also do it on the <a href="https://discord.gg/jf6tm6TQgN">Discord</a> server if there is a problem using Zoom.<br>Please do not pay for the tutoring before the company tells you to do it. To contact the company you can either email us using the start button or contact us using Discord (Sparky2you).</p>
+        <p>All the tutorings will be done using <a href="https://discord.gg/jf6tm6TQgN">Discord</a>. Please do not pay for the tutoring before the company tells you to do it. To contact the company you can either email us using the start button or contact us using Discord (Sparky2you).</p>
     </div>
     <div class="Bottom">
         <p style="color: gray;">2023 Tutormatic. All Rights Reserved.</p>
