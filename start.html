@@ -34,7 +34,14 @@
         </datalist>
     </div>
     <div style="text-align: center;margin-top: 10px;">
-        <button style="background-color: transparent;border: white solid 1px;width: 100px;height: 30px;color: white;margin-top: 10px;" onclick="sendEmail()">Finish email</button>
+        <button style="background-color: transparent;border: white solid 1px;width: 100px;height: 30px;color: white;margin-top: 10px;cursor: pointer;" onclick="sendEmail()">Finish email</button>
+    </div>
+    <div style="text-align: center;color: white;">
+        <p>Or</p>
+        <div style="display: flex;justify-content: center;">
+            <p>Send it to us directly: <a style="cursor: pointer;" onclick="email()">tutormatic1@gmail.com</a></p>
+            <img style="cursor: pointer;" onclick="copy('tutormatic1@gmail.com');alert('Copied!')" src="./copy.png" alt="Copy">
+        </div>
     </div>
 </body>
 <script src="./index.js"></script>
@@ -46,5 +53,17 @@
         planInput.value = selectedPlan;
     }
     console.log(urlParams)
+    function email() {
+        window.location.href = "mailto:tutormatic1@gmail.com";
+    }
+    function copy(text) {
+    navigator.clipboard.writeText(text)
+        .then(() => {
+        console.log("Text copied to clipboard: ", text);
+        })
+        .catch((error) => {
+        console.error("Error copying text to clipboard: ", error);
+        });
+    }
 </script>
 </html>
