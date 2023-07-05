@@ -1,0 +1,12 @@
+.bdy {
+    margin-top: 15%;
+    background-image: url(./Images/MainBackground.png);
+    background-repeat: no-repeat;
+}
+
+/* On pc */
+@media (min-width: 768px) {
+    .bdy {
+        background-size: cover;
+    }
+}

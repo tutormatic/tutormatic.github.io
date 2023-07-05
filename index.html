@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Tutormatic</title>
+</head>
+<body>
+    <div class="MainTop">
+        <p style="text-align: center;margin-top: 100px;font-size: 60px;color: white;">Tutormatic</p>
+        <p style="margin-top: -65px;font-size: 23px;color: white;">Free your creativity!</p>
+        <a href="./start.html"><button class="MainButton" id="start">Start</button></a>
+    </div>
+    <div class="Middle">
+        <p style="font-size: 40px;">List</p>
+        <div class="LanguageContainer">
+            <div class="LanguageTable">
+                <div class="format">
+                    <p>HTML</p>
+                </div>
+                <div class="format-desc">
+                    <p>HTML is used to create elements in a website.</p>
+                </div>
+            </div>
+        
+            <div class="LanguageTable">
+                <div class="format">
+                    <p>CSS</p>
+                </div>
+                <div class="format-desc">
+                    <p>CSS is used to style and format the appearance of HTML elements.</p>
+                </div>
+            </div>
+
+            <div class="LanguageTable">
+                <div class="format">
+                    <p>Javascript</p>
+                </div>
+                <div class="format-desc">
+                    <p>Javascript is used to add effects to your website.</p>
+                </div>
+            </div>
+
+            <div class="LanguageTable">
+                <div class="format">
+                    <p>Python</p>
+                </div>
+                <div class="format-desc">
+                    <p>Python is widely used in various domains, such as web development, data analysis, artificial intelligence, and more.</p>
+                </div>
+            </div>
+
+            <div class="LanguageTable">
+                <div class="format">
+                    <p>Node.js</p>
+                </div>
+                <div class="format-desc">
+                    <p>Node.js is Javascript for things like web development, data analysis, artificial intelligence, and more.</p>
+                </div>
+            </div>
+
+            <div class="LanguageTable">
+                <div class="format">
+                    <p>Skript</p>
+                </div>
+                <div class="format-desc">
+                    <p>Skript is used for Minecraft plugin development and is basicly codded in english.</p>
+                </div>
+            </div>
+        </div>
+        <div class="Sep"></div>
+        <p style="font-size: 40px;">Plans</p>
+        <div style="text-align: -webkit-center;">
+            <div class="Plan">
+                    <a href="start.html?plan=Normal" style="text-decoration: none;">
+                    <p style="color: black;font-size: 25px;font-weight: bold;">Normal</p>
+                    <p style="color: gray;text-decoration: line-through;margin-bottom: -15px;">$25 USD</p>
+                    <p style="color: green;font-weight: bold;font-size: 20px;">$15 USD</p>
+                    <p style="color: black;">You will learn 1 programming language of your choise that needs to be in the list.</p>
+                    <p style="color: black;">60 minutes</p>
+                </a>
+            </div>
+            <div class="Plan" style="margin-top: 25px;">
+                <a href="start.html?plan=Full web" style="text-decoration: none;">
+                    <p style="color: black;font-size: 25px;font-weight: bold;">Full web</p>
+                    <p style="color: gray;text-decoration: line-through;margin-bottom: -15px;">$30 USD</p>
+                    <p style="color: green;font-weight: bold;font-size: 20px;">$20 USD</p>
+                    <p style="color: black;">Learn the 3 basic languages that are used to create websites: HTML, CSS and Javascript.</p>
+                    <p style="color: black;">60 minutes</p>
+                </a>
+            </div>
+            <div class="Plan" style="margin-top: 25px;">
+                <a href="start.html?plan=Electron" style="text-decoration: none;">
+                    <p style="color: black;font-size: 25px;font-weight: bold;">Electron</p>
+                    <p style="color: gray;text-decoration: line-through;margin-bottom: -15px;">$30 USD</p>
+                    <p style="color: green;font-weight: bold;font-size: 20px;">$25 USD</p>
+                    <p style="color: black;">Learn HTML, CSS, Javascript, Node.js and Electron.</p>
+                    <p style="color: black;">60 minutes</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="Sep" style="margin-top: 55px;"></div>
+    <div style="text-align: center;">
+        <p style="font-size: 40px;">Payments</p>
+        <p style="margin-bottom: -60px;">Contact the company before paying.</p>
+        <button onclick="openPopup()" style="margin-bottom: 100px;cursor: pointer;" class="PaymentButton">Payments</button>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+              <button onclick="closePopup()" class="exit-button">X</button>
+              <h2>Select a plan</h2>
+              <a href="https://buy.stripe.com/9AQ6qw9VOculbAYdQT"><button style="margin-bottom: 10px;" class="PlanButton" onclick="selectPlan('Normal')">Normal</button></a>
+              <a href="https://buy.stripe.com/7sI9CIfg8cul7kIcMQ"><button style="margin-bottom: 10px;" class="PlanButton" onclick="selectPlan('Web Full')">Web Full</button></a>
+              <a href="https://buy.stripe.com/bIY4io5FyeCtdJ65kp"><button class="PlanButton" onclick="selectPlan('Electron')">Electron</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="Sep"></div>
+    <div style="text-align: center;margin-bottom: 100px;">
+        <p style="font-size: 40px;">Informations</p>
+        <p>All the tutorings will be done using <a href="https://discord.gg/jf6tm6TQgN">Discord</a>. Please do not pay for the tutoring before the company tells you to do it. To contact the company you can either email us using the start button or contact us using Discord (Sparky2you).</p>
+    </div>
+    <div class="Bottom">
+        <a style="text-decoration: none;color: black;" href="./Apply/apply.html"><button style="border-radius: 0px;border: solid black 1px;cursor: pointer;height: 25px;width: 70px;">Apply</button></a>
+        <p style="color: gray;">2023 Tutormatic. All Rights Reserved.</p>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
