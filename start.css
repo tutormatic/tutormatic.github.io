@@ -4,6 +4,15 @@
     background-repeat: no-repeat;
 }
 
+.input {
+    color: white;
+    background: rgba(39, 36, 36, 0.541);
+    border: solid white 2px;
+    border-radius: 0;
+    height: 25px;
+    box-shadow: 0 0 1px 1px;
+}
+
 /* On pc */
 @media (min-width: 768px) {
     .bdy {
