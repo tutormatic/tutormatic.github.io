@@ -11,7 +11,7 @@ function sendEmail() {
                     return false;
                 }
                 if (plan.toUpperCase() !== "NORMAL" && plan.toUpperCase() !== "FULL WEB" && plan.toUpperCase() !== "ELECTRON") {
-                    alert("You plan does not exist or is not written correctly.");
+                    alert("The plan does not exist or is not written correctly.");
                     return false;
                 }
                 var subject = encodeURIComponent("Tutoring for " + name);
@@ -50,4 +50,9 @@ function selectPlan(plan) {
 function closePopup() {
     var popup = document.getElementById('popup');
     popup.style.display = 'none';
+}
+
+function scrollToMiddle() {
+    const middleElement = document.getElementById("plans");
+    middleElement.scrollIntoView({ behavior: "smooth" });
 }
