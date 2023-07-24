@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./Images/logo.ico" type="image/x-icon">
+    <title>Tutormatic</title>
+</head>
+<body>
+    <!--
+    Need:
+        
+    -->
+    <nav style="position: fixed; z-index: 9999; right: 0;margin-right: 25px;">
+        <ul style="display: flex; list-style: none; padding: 0;">
+            <li>
+                <button onclick="start()" style="font-weight: bold;margin-right: 10px;" class="button">Start</button>
+            </li>
+        </ul>
+    </nav>    
+    <div class="mainImage">
+        <div class="main">
+            <p style="font-size: 60px;margin-top: -100px;">Tutormatic</p>
+            <p style="font-size: 25px;margin-left: 30px;margin-top: -65px;">Free your creativity!</p>
+            <button onclick="start()" style="margin-left: 80px;display: block;margin-top: 10px;" class="button" id="startButton">Start</button>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; margin: 50px; padding: 20px; border: 2px solid #333; border-radius: 10px; background-color: #f8f8f8; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <p style="font-size: 36px; font-weight: bold; margin: 0 0 10px 0; color: #333;">Super Tutors</p>
+        <p style="font-size: 18px; margin: 0; color: #666;">We have super tutors with extensive experience in programming.</p>
+        <img style="margin-top: 20px; max-width: 100%; border-radius: 5px;" src="./Images/staff.png" alt="Staff">
+    </div> 
+    <div style="display: flex;">
+        <div style="margin-left: auto;margin-bottom: 10px;">
+            <a href="https://discord.gg/kgyaUuZxsn"><img src="./Images/disc.png" alt="Discord"></a>
+            <a style="margin-left: 10px;" href="https://www.instagram.com/tutormaticcompany"><img src="./Images/insta.png" alt="Instagram"></a>
+            <a style="margin-left: 10px;margin-right: 10px;" href="https://twitter.com/tutormatic1"><img src="./Images/twit.png" alt="Twitter"></a>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
